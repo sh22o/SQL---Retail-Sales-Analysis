@@ -225,9 +225,11 @@ SELECT
 FROM Retailsales r
 GROUP BY r.category;
 ```
+--- 
 <img width="910" height="256" alt="image" src="https://github.com/user-attachments/assets/ca40016b-abb3-4f3f-a4ae-6bb690ec2ee1" /> 
 
 --- 
+
 ### **Q15. Find the top 5 customers based on the highest total sales.**  
 
 ```sql
