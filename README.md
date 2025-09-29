@@ -188,6 +188,8 @@ Where r.category ='Clothing'
 And r.quantiy >=4 
 AND r.sale_date BETWEEN '2022-11-01' AND '2022-11-31';
 ```
+<img width="637" height="164" alt="image" src="https://github.com/user-attachments/assets/7cf407da-be29-4ac5-a672-4cb0d006d79b" />
+
 --- 
 ### **Q.12 THE BEST day for sales by data and value** 
 
@@ -198,6 +200,8 @@ Where r.category ='Clothing'
 And r.quantiy >=4 
 AND r.sale_date BETWEEN '2022-11-01' AND '2022-11-31';
 ```
+<img width="512" height="161" alt="image" src="https://github.com/user-attachments/assets/fcb45c26-0770-4acd-abc4-a8058ed3bd99" />
+
 ---  
 ### **Q13. Write a SQL query to calculate the total sales (total_sale) for each category.:** 
 
@@ -239,7 +243,7 @@ LIMIT 5
 
 ```sql
 SELECT 
-    r.category ,    
+    r.category,    
     COUNT(DISTINCT r.customer_id ) as unique_customer 
 FROM Retailsales r 
 GROUP BY category
