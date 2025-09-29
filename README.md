@@ -2,7 +2,7 @@
 
 ## 📌 Business Requirement  
 * Stakeholders asked to analyze the sales on **5th November 2022** (the best sales day of the year) to prepare for future campaigns.  
-They want to understand sales performance by categories, customer behavior, and key revenue drivers. *  
+They want to understand sales performance by categories, customer behavior, and key revenue drivers.*  
 --- 
 ## Step 1: Data Cleaning  
 
@@ -68,7 +68,7 @@ SELECT DISTINCT  r.category  from RetailSales r ;
 ## STEP 3 : analysis & business problems  
 ## ❓ Business Questions → 💻 SQL Queries → 📊 Insights  
 --- 
-### **q1: Retrieve all columns for sales made on '2022-11-05' ? **
+### **q1: Retrieve all columns for sales made on '2022-11-05' ?**
 ```sql
 SELECT * from Retailsales r 
 WHERE r.sale_date = '2022-11-05';
@@ -130,7 +130,7 @@ ORDER BY category_sales DESC;
 > - Electronics performed moderately.
 
 --- 
-### **Q7. All transactions where the category is 'Clothing' and the quantity sold is more than 4 in the month of Nov-2022 ** 
+### **Q7. All transactions where the category is 'Clothing' and the quantity sold is more than 4 in the month of Nov-2022** 
 
 ``` SQL
 SELECT *  
@@ -150,7 +150,7 @@ And r.quantiy >=4
 AND r.sale_date BETWEEN '2022-11-01' AND '2022-11-31'; 
 ```
 
-### **Q9. How much Total revenue for all of  November ** 
+### **Q9. How much Total revenue for all of  November** 
 
 ```sql
 SELECT SUM(r.total_sale ) AS total_transactions 
@@ -159,7 +159,7 @@ Where r.category ='Clothing'
 And r.quantiy >=4 
 AND r.sale_date BETWEEN '2022-11-01' AND '2022-11-31';
 ```
-### **Q10. What is the average order value (AOV) for these sales for all of November?  ** 
+### **Q10. What is the average order value (AOV) for these sales for all of November?** 
 
 ```sql
 SELECT AVG(r.total_sale )AS avg_order_value
@@ -178,7 +178,7 @@ AND r.sale_date BETWEEN '2022-11-01' AND '2022-11-31';
 | Average Order Value   | 668     |  
 
 --- 
-### **Q11.Which gender bought the most Clothing items (>4 units) in November 2022? **  
+### **Q11.Which gender bought the most Clothing items (>4 units) in November 2022?**  
 
 ```sql
 SELECT r.gender , COUNT(*) AS transactions ,
@@ -199,7 +199,7 @@ And r.quantiy >=4
 AND r.sale_date BETWEEN '2022-11-01' AND '2022-11-31';
 ```
 ---  
-### **Q13. Write a SQL query to calculate the total sales (total_sale) for each category.: ** 
+### **Q13. Write a SQL query to calculate the total sales (total_sale) for each category.:** 
 
 ```sql
 SELECT  R.category  , SUM(r.total_sale )as net_sale,
@@ -210,7 +210,7 @@ GROUP BY 1 ;
 ``` 
 <img width="660" height="203" alt="image" src="https://github.com/user-attachments/assets/d88a9d91-7ba1-4642-9017-5eb72233fd1e" /> 
 --- 
-### **Q14. FIND AVG AGE FOR CUSTOMERS' SALES? **  
+### **Q14. FIND AVG AGE FOR CUSTOMERS' SALES?**  
 
 ```sql
 SELECT  
@@ -224,7 +224,7 @@ GROUP BY r.category;
 <img width="910" height="256" alt="image" src="https://github.com/user-attachments/assets/ca40016b-abb3-4f3f-a4ae-6bb690ec2ee1" /> 
 
 --- 
-### **Q15. Find the top 5 customers based on the highest total sales.  **  
+### **Q15. Find the top 5 customers based on the highest total sales.**  
 
 ```sql
 SELECT R.customer_id ,r.category , r.sale_date ,SUM(r.total_sale) as total_sales 
@@ -235,7 +235,7 @@ LIMIT 5
 <img width="935" height="315" alt="image" src="https://github.com/user-attachments/assets/78214143-8c10-4179-bb29-1a2e4b4dea3c" /> 
 
 --- 
-### **Q15. Find the number of unique customers who purchased items from each category. **   
+### **Q15. Find the number of unique customers who purchased items from each category.**   
 
 ```sql
 SELECT 
@@ -281,10 +281,7 @@ WHERE r.customer_id = 141;
 
 
 
---- 
 
-
----   
 
 
 
