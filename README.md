@@ -272,7 +272,7 @@ By cleaning, exploring, and analyzing the retail sales dataset, we answered key 
 - 🛍️ **Top-performing categories** – Clothing dominated, followed by Beauty and Electronics.  
 - 👥 **Customer behavior insights** – gender preferences, average age, and top customers by revenue.  
 - 📈 **Campaign readiness** – identified opportunities for targeting high-value segments and best-performing product categories.
-  -- ✅ With these insights, the business can make **data-driven decisions** for future campaigns, optimize **inventory**, and improve **marketing strategies**.  
+-  ✅ With these insights, the business can make **data-driven decisions** for future campaigns, optimize **inventory**, and improve **marketing strategies**.  
 --- 
 ## 🔮 Next Steps  
 
