@@ -248,8 +248,11 @@ SELECT
 FROM Retailsales r 
 GROUP BY category
 ```
-<img width="767" height="264" alt="image" src="https://github.com/user-attachments/assets/de928c3f-1f01-4c04-8299-453f64fc36f4" /> 
+ 
+<img width="767" height="264" alt="image" src="https://github.com/user-attachments/assets/de928c3f-1f01-4c04-8299-453f64fc36f4" />  
+
 --- 
+
 ### **Q16. SHOW ALL TRANSITION DETAILS FOR ID VIEW ON UNIQUE CUSTOMER:(ex:141 )**   
 
 ```sql
