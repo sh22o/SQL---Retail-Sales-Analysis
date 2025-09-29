@@ -211,9 +211,13 @@ SELECT  R.category  , SUM(r.total_sale )as net_sale,
 FROM Retailsales r 
 GROUP BY 1 ; 
 
-``` 
+```
+---  
+
 <img width="660" height="203" alt="image" src="https://github.com/user-attachments/assets/d88a9d91-7ba1-4642-9017-5eb72233fd1e" /> 
---- 
+
+ --- 
+
 ### **Q14. FIND AVG AGE FOR CUSTOMERS' SALES?**  
 
 ```sql
